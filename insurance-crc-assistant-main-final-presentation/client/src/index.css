@@ -1,0 +1,32 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* optional helper */
+.container {
+  @apply mx-auto max-w-4xl px-4;
+}
+:root[data-theme="dark"] {
+  --bg-main: #0b1220;
+  --bg-card: #1b2333;
+  --bg-sidebar: #0f172a;
+
+  --text-main: #ffffff;
+  --text-muted: #9ca3af;
+
+  --border-color: #334155;
+  --primary: #4f46e5;
+}
+
+:root[data-theme="light"] {
+  --bg-main: #f9fafb;
+  --bg-card: #ffffff;
+  --bg-sidebar: #ffffff;
+
+  --text-main: #111827;
+  --text-muted: #6b7280;
+
+  --border-color: #e5e7eb;
+  --primary: #4f46e5;
+}
